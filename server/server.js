@@ -20,7 +20,11 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/student_m
   useUnifiedTopology: true,
 })
   .then(() => console.log('✅ MongoDB connected successfully'))
-  .catch((err) => console.error('❌ MongoDB connection error:', err));
+  .catch((err) => console.error(' MongoDB connection error:', err));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
+
+app.get('/',(req,res)=>{
+    res.send("<h1>request hit</h1>")
+})
