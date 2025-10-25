@@ -18,7 +18,7 @@ function Home() {
     dateOfAdmission: ''
   });
 
-  const API_URL = 'https://student-management-luminar-mechine.vercel.app';
+  const API_URL = 'http://localhost:5000/';
 
   //  Fetch all students
   useEffect(() => {
