@@ -18,7 +18,7 @@ function Home() {
     dateOfAdmission: ''
   });
 
-  const API_URL = 'http://localhost:5000/';
+  const API_URL = 'http://localhost:5000';
 
   //  Fetch all students
   useEffect(() => {
