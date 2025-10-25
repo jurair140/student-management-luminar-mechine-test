@@ -1,0 +1,4 @@
+await fetch(`${API_URL}/${currentStudent._id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)

@@ -18,7 +18,7 @@ function Home() {
     dateOfAdmission: ''
   });
 
-  const API_URL = 'http://localhost:5000/api/students';
+  const API_URL = 'http://student-management-luminar-mechine.vercel.app/api/students';
 
   //  Fetch all students
   useEffect(() => {
@@ -338,7 +338,7 @@ function Home() {
                     <label className="form-label">Date of Admission</label>
                     <input
                       type="date"
-                      className="form-control"
+                      className="form-control"x
                       name="dateOfAdmission"
                       value={formData.dateOfAdmission}
                       onChange={handleInputChange}
